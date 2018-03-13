@@ -124,7 +124,7 @@ headtrackr.Tracker = function(params) {
 					headtrackerStatus("camera found");
 					this.stream = stream;
 					if (video.mozCaptureStream) {
-					  video.mozSrcObject = stream;
+					  video.srcObject = stream;
 					} else {
 					  video.src = (window.URL && window.URL.createObjectURL(stream)) || stream;
 					}
